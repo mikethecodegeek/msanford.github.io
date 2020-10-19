@@ -1,1 +1,178 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Sanford</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css'/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="logo">
+            <p>ME</p>
+        </div>
+        <div class="content">
+            <ul>
+                <li><a href="#"><i class="fa fa-home nav-home ds-section aos-item" data-aos="nav-change"
+                    data-aos-anchor="#home"
+                    data-aos-mirror="true"
+                    data-aos-offset="299"
+                    data-aos-anchorPlacement="bottom"
+                    data-aos-duration="500" aria-hidden="true"></i><span>HOME</span></a></li>
+                <li><a href="#about"><i class="fa fa-user nav-about ds-section aos-item" data-aos="nav-change"
+                    data-aos-anchor="#about"
+                    data-aos-mirror="true"
+                    data-aos-offset="225"
+                    data-aos-anchorPlacement="bottom"
+                    data-aos-duration="500" aria-hidden="true"></i><span>ABOUT</span></a></li>
+                <li><a href="#skills"><i class="fa fa-cog nav-skills ds-section aos-item" data-aos="nav-change"
+                    data-aos-anchor="#skills"
+                    data-aos-mirror="true"
+                    data-aos-offset="325"
+                    data-aos-anchorPlacement="bottom"
+                    data-aos-duration="500" aria-hidden="true"></i><span>SKILLS</span></a></li>
+                <li><a href="#"><i class="fa fa-eye nav-work ds-section" aria-hidden="true"></i><span>WORK</span></a></li>
+                <li><a href="#contact"><i class="fa fa-envelope nav-contact ds-section" data-aos="nav-change"
+                    data-aos-anchor="#contact"
+                    data-aos-mirror="true"
+                    data-aos-offset="250"
+                    data-aos-anchorPlacement="bottom"
+                    data-aos-duration="500" aria-hidden="true"></i><span>CONTACT</span></a><li>
+            </ul>
+        </div>
+        <div class="social">
+            <ul>
+                <li><i class="fab fa-github" aria-hidden="true"></i></li>
+                <li><i class="fab fa-linkedin" aria-hidden="true"></i></li>
+                <li><i class="fab fa-facebook" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        <ul>
+            <li><i class="fa fa-bars hamburger"></i></li>
+        </ul>
+
+    </nav>
+            <div id="mobile-menu" data-aos="fade-down" data-aos-duration="500">
+                <div class="mobile-content">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#">WORK</a></li>
+                        <li><a href="#contact">CONTACT</a></li> 
+                        <li><hr class="active"></li> 
+                        <li><a href="#contact">GITHUB</a></li>
+                        <li><a href="#contact">LINKEDIN</a></li>
+                        <li><a href="#contact">FACEBOOK</a></li>
+                    </ul>     
+            </div>
+        </div>
+<!-- <div class="spacer"></div> -->
+    <div class="hero hero-bkg-animated" id="home">
+        <div class="lead">
+
+           <h1 class="hi">Hi,</h1>
+           <h2 class="name">I'm Mike</h2>
+           <!-- <h2 class="web">web developer.</h2> -->
+
+           <p>FULL STACK WEB DEVELOPER</p>
+           <a href="#contact" class="contact">CONTACT ME</a>
+        </div>
+
+        <div class="social-tab" data-aos="slide-left">
+            <ul>
+                <li><a href="#"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="about-content" data-aos="fade-in"
+        data-aos-anchor="#about"
+        data-aos-offset="240"
+        data-aos-duration="500">
+            <!-- <div class="spacer"></div> -->
+            <h2>About Me</h2>
+            <div data-aos="fade-in"
+            data-aos-anchor="#about"
+            data-aos-offset="370"
+            data-aos-duration="500">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, minus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quam reprehenderit optio perspiciatis nam labore!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div class="skills-content">
+            <div class="spacer"></div>
+            <div data-aos="fade-in"
+            data-aos-anchor="#skills"
+            data-aos-offset="150"
+            data-aos-duration="500">
+
+                <p>As an experienced developer I've worked with a number of tools and frameworks.</p>
+                <h2>Skills</h2>
+            </div>
+            <!-- <h2>Front End</h2> -->
+            <div class="front-end"  data-aos="fade-left"
+            data-aos-anchor="#skills"
+            data-aos-offset="300"
+            data-aos-duration="500">
+                <img class="" src="html5.svg" alt="Experienced developer with HTML 5">
+                <img src="css.svg" alt="">
+                <img src="javascript.svg" alt="">
+                <img src="jquery.svg" alt="">
+            </div>
+            <!-- <h2>Back End</h2> -->
+            <div class="back-end" data-aos="fade-right"
+            data-aos-anchor="#skills"
+            data-aos-offset="500"
+            data-aos-duration="500">
+                <img src="node.svg" alt="Experienced developer with HTML 5">
+                <img src="python.svg" alt="">
+                <img src="php.svg" alt="">
+                
+            </div>
+          
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="contact-content">
+            <div class="spacer"></div>
+            <h1>Contact Me</h1>
+            <p>I am super ambitious and stuff. I'm always looking for some new projects</p>
+            <div class="form" data-aos="zoom-in"
+            data-aos-anchor="#contact"
+            data-aos-offset="200"
+            data-aos-duration="500">
+
+                <form action="#">
+                    <input class="field1" type="text" name="name" id="name" placeholder="Name">
+                    <input class="field2" type="email" name="email" id="email" placeholder="Email">
+                    <input class="field3" type="text" name="subject" id="subject" placeholder="Subject">
+                    <textarea class="field4" placeholder="Message" name="message" id="message" cols="30" rows="10"></textarea>
+                    <input class="btn" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+ 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>    
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>
