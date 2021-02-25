@@ -1,178 +1,572 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Sanford</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css'/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="/style.css">
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Michael Sanford - Software Engineer</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
 </head>
+
 <body>
 
-    <nav id="navbar">
-        <div class="logo">
-            <p>ME</p>
-        </div>
-        <div class="content">
-            <ul>
-                <li><a href="#"><i class="fa fa-home nav-home ds-section aos-item" data-aos="nav-change"
-                    data-aos-anchor="#home"
-                    data-aos-mirror="true"
-                    data-aos-offset="299"
-                    data-aos-anchorPlacement="bottom"
-                    data-aos-duration="500" aria-hidden="true"></i><span>HOME</span></a></li>
-                <li><a href="#about"><i class="fa fa-user nav-about ds-section aos-item" data-aos="nav-change"
-                    data-aos-anchor="#about"
-                    data-aos-mirror="true"
-                    data-aos-offset="225"
-                    data-aos-anchorPlacement="bottom"
-                    data-aos-duration="500" aria-hidden="true"></i><span>ABOUT</span></a></li>
-                <li><a href="#skills"><i class="fa fa-cog nav-skills ds-section aos-item" data-aos="nav-change"
-                    data-aos-anchor="#skills"
-                    data-aos-mirror="true"
-                    data-aos-offset="325"
-                    data-aos-anchorPlacement="bottom"
-                    data-aos-duration="500" aria-hidden="true"></i><span>SKILLS</span></a></li>
-                <li><a href="#"><i class="fa fa-eye nav-work ds-section" aria-hidden="true"></i><span>WORK</span></a></li>
-                <li><a href="#contact"><i class="fa fa-envelope nav-contact ds-section" data-aos="nav-change"
-                    data-aos-anchor="#contact"
-                    data-aos-mirror="true"
-                    data-aos-offset="250"
-                    data-aos-anchorPlacement="bottom"
-                    data-aos-duration="500" aria-hidden="true"></i><span>CONTACT</span></a><li>
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Skills</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+             <!-- <li><a target="_blank" href="http://medium.com/@mikethecodegeek">My Blog</a></li> -->
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">I'm Michael Sanford.</h1>
+            <h3>I love building cool things! I am a <span>Full Stack</span> <span>Software Engineer</span><a class="smoothscroll" href="#about"><p>start scrolling</a>
+            learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr />
+            <ul class="social">
+               <!-- <li><a href="https://twitter.com/Mikethecodegeek"><i class="fa fa-twitter"></i></a></li> -->
+               <li><a target="_blank" href="https://www.linkedin.com/in/michael-sanford-1180b3115"><i class="fa fa-linkedin"></i></a></li>
+               <li><a target="_blank" href="https://github.com/mikethecodegeek"><i class="fa fa-github"></i></a></li>
             </ul>
-        </div>
-        <div class="social">
-            <ul>
-                <li><i class="fab fa-github" aria-hidden="true"></i></li>
-                <li><i class="fab fa-linkedin" aria-hidden="true"></i></li>
-                <li><i class="fab fa-facebook" aria-hidden="true"></i></li>
-            </ul>
-        </div>
-        <ul>
-            <li><i class="fa fa-bars hamburger"></i></li>
-        </ul>
+         </div>
+      </div>
 
-    </nav>
-            <div id="mobile-menu" data-aos="fade-down" data-aos-duration="500">
-                <div class="mobile-content">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#skills">SKILLS</a></li>
-                        <li><a href="#">WORK</a></li>
-                        <li><a href="#contact">CONTACT</a></li> 
-                        <li><hr class="active"></li> 
-                        <li><a href="#contact">GITHUB</a></li>
-                        <li><a href="#contact">LINKEDIN</a></li>
-                        <li><a href="#contact">FACEBOOK</a></li>
-                    </ul>     
-            </div>
-        </div>
-<!-- <div class="spacer"></div> -->
-    <div class="hero hero-bkg-animated" id="home">
-        <div class="lead">
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
 
-           <h1 class="hi">Hi,</h1>
-           <h2 class="name">I'm Mike</h2>
-           <!-- <h2 class="web">web developer.</h2> -->
+   </header> <!-- Header End -->
 
-           <p>FULL STACK WEB DEVELOPER</p>
-           <a href="#contact" class="contact">CONTACT ME</a>
-        </div>
 
-        <div class="social-tab" data-aos="slide-left">
-            <ul>
-                <li><a href="#"><i class="fab fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
-    </div>
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
 
-    <div id="about">
-        <div class="about-content" data-aos="fade-in"
-        data-aos-anchor="#about"
-        data-aos-offset="240"
-        data-aos-duration="500">
-            <!-- <div class="spacer"></div> -->
+      <div class="row">
+
+         <div class="three columns">
+
+            <!-- <img class="profile-pic"  src="images/profilepic.jpg" alt="" /> -->
+
+         </div>
+
+         <div class="nine columns main-col">
+
             <h2>About Me</h2>
-            <div data-aos="fade-in"
-            data-aos-anchor="#about"
-            data-aos-offset="370"
-            data-aos-duration="500">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, minus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quam reprehenderit optio perspiciatis nam labore!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nostrum.</p>
+
+            <p>  I love the battle of developing an idea into existence, and forging the bridge between conceptualization and a tangible, impactful product. Programming has been my outlet for problem-solving and creative expression.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Michael Sanford</span><br>
+						   <!-- <span>(508) 292-1799</span><br> -->
+                     <span>mikethecodegeek.xyz</span>
+					   </p>
+
+               </div>
+
+                <div class="columns download">
+                    <p>
+                        <a target="_blank" href="http://www.indeed.com/r/Michael-Sanford/15dba6ff862bfea9" class="button"><i class="fa"></i>View My Resume Online</a>
+                    </p>
+                </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="https://my.indeed.com/r/Michael-Sanford/15dba6ff862bfea9/pdf" class="button"><i class="fa fa-download"></i>Or Download it Here!</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <!-- <p>Here is a brief overview of my current skillset:
+            </p> -->
+
+				<!-- <div class="bars">
+
+				   <ul class="skills">
+
+						<li><span class="bar-expand css"></span><em>CSS</em></li>
+						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
+                        <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
+                        <li><span class="bar-expand angular"></span><em>MongoDB</em></li>
+                        <li><span class="bar-expand mongo"></span><em>Angular</em></li>
+                       <li><span class="bar-expand node"></span><em>NodeJS</em></li>
+					</ul>
+
+				</div>end skill-bars -->
+            <div class='skills'>
+               <div class='skill-grid'>
+               <i class="devicon-react-original colored"></i>
+               <i class="devicon-redux-original colored"></i>
+               <i class="devicon-html5-plain-wordmark colored"></i>
+               <i class="devicon-css3-plain-wordmark colored"></i>
+               <!-- <i class="devicon-sass-original colored"></i>
+               <i class="devicon-javascript-plain colored"></i> -->
+               </div>
+               <!-- <i class="devicon-express-original colored"></i> -->
+               <!-- <i class="devicon-flask-original colored"></i> -->
+               <div class='skill-grid-tools'>
+                  <i class="devicon-nodejs-plain-wordmark colored"></i>
+                  <i class="devicon-express-original-wordmark colored"></i>
+                  <i class="devicon-flask-original-wordmark colored"></i>
+               </div>
+               <div class='skill-grid-two'>
+                  <i class="devicon-postgresql-plain-wordmark colored"></i>
+                  <!-- <i class="devicon-mysql-plain-wordmark colored"></i> -->
+                  <i class="devicon-python-plain-wordmark colored"></i>
+                  <!-- <i class="devicon-php-plain colored"></i> -->
+                  <!-- <i class="devicon-laravel-plain-wordmark colored"></i> -->
+               </div>
+
+               <div class="skill-grid-tools">
+                  <i class="devicon-npm-original-wordmark colored"></i>
+                  <i class="devicon-github-original-wordmark colored"></i>
+                  <i class="devicon-heroku-plain-wordmark colored"></i>
+               </div>
 
             </div>
-        </div>
-    </div>
+            
+         
+			</div> <!-- main-col end -->
 
-    <div id="skills">
-        <div class="skills-content">
-            <div class="spacer"></div>
-            <div data-aos="fade-in"
-            data-aos-anchor="#skills"
-            data-aos-offset="150"
-            data-aos-duration="500">
+      </div> <!-- End skills -->
 
-                <p>As an experienced developer I've worked with a number of tools and frameworks.</p>
-                <h2>Skills</h2>
-            </div>
-            <!-- <h2>Front End</h2> -->
-            <div class="front-end"  data-aos="fade-left"
-            data-aos-anchor="#skills"
-            data-aos-offset="300"
-            data-aos-duration="500">
-                <img class="" src="html5.svg" alt="Experienced developer with HTML 5">
-                <img src="css.svg" alt="">
-                <img src="javascript.svg" alt="">
-                <img src="jquery.svg" alt="">
-            </div>
-            <!-- <h2>Back End</h2> -->
-            <div class="back-end" data-aos="fade-right"
-            data-aos-anchor="#skills"
-            data-aos-offset="500"
-            data-aos-duration="500">
-                <img src="node.svg" alt="Experienced developer with HTML 5">
-                <img src="python.svg" alt="">
-                <img src="php.svg" alt="">
-                
-            </div>
-          
-        </div>
-    </div>
+   </section> <!-- Resume Section End-->
 
-    <div id="contact">
-        <div class="contact-content">
-            <div class="spacer"></div>
-            <h1>Contact Me</h1>
-            <p>I am super ambitious and stuff. I'm always looking for some new projects</p>
-            <div class="form" data-aos="zoom-in"
-            data-aos-anchor="#contact"
-            data-aos-offset="200"
-            data-aos-duration="500">
 
-                <form action="#">
-                    <input class="field1" type="text" name="name" id="name" placeholder="Name">
-                    <input class="field2" type="email" name="email" id="email" placeholder="Email">
-                    <input class="field3" type="text" name="subject" id="subject" placeholder="Subject">
-                    <textarea class="field4" placeholder="Message" name="message" id="message" cols="30" rows="10"></textarea>
-                    <input class="btn" type="submit">
-                </form>
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Projects</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img class='thumb' alt="" src="images/poedium_2.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Poedium</h5>
+                               <p>A poem sharing site inspired by Medium.com. Users are able to write poems as well as comment and like on other user's poems.</p> <br/>
+                              <p>ExpressJS, NodejS, Pug, PostgrSQL, Javascript</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img class='thumb' alt="" src="images/untappd2.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>UnTapped</h5>
+                               <p>Full stack application that allows users to discover new beers and share their reviews with others.</p> <br/>
+                              <p>React, Redux, ExpressJS, NodeJS, PostgreSQL, Full Stack</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img class='thumb' alt="" src="images/properteye3.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>PropertEye</h5>
+                              <p>This is a full stack property management tool written from the ground up. </p><br/>
+                                 <p>React, Redux, ExpressJS, NodeJS and PostgreSQL</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+             
+
+             
+
+
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/poedium.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>Poedium</h4>
+			      <p>Is a full-stack application that seeks to clone the medium.com experience.
+                  As more people are trying to find a way to show their poetic side</p>
+               <span class="categories"><i class="fa fa-tag"></i>ExpressJS, Pug, PostgreSQL, Javascript</span>
+		      </div>
+
+            <div class="link-box">
+               <a style='padding-right: 10px' target="_blank" href="https://poedium.herokuapp.com/">View Live</a>
+               <a target="_blank" href="https://github.com/mikethecodegeek/medium-clone">Github</a>
+		         <a class="popup-modal-dismiss">Close</a>
             </div>
-        </div>
-    </div>
- 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>    
-<script src="script.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/untappd.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>UnTappd</h4>
+			      <p>This project is a clone of Untappd.com. This is a full stack application that includes auth, searching and uploading user reviews</p>
+               <span class="categories"><i class="fa fa-tag"></i>React, Redux, ExpressJS, NodeJS, Full Stack</span>
+		      </div>
+
+            <div class="link-box">
+               <a style='padding-right: 10px' target="_blank" href="https://intense-caverns-51880.herokuapp.com/">View Live</a>
+               <a target="_blank" href="https://github.com/mikethecodegeek/untapped/">Github</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/PropertEye.png" alt="" />
+
+		      <div class="description-box">
+			      <h4>PropertEye</h4>
+			      <p>Property management software for small businesses focused on residential renting. The primary purpose is to get an overview of what’s going on at any moment with their investment.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Database Design, React, Redux, ExpressJS, NodeJS</span>
+		      </div>
+
+            <div class="link-box">
+               <a style='padding-right: 10px' target="_blank" href="https://lit-fortress-76276.herokuapp.com/profile/">View Live</a>
+               <a target="_blank" href="https://github.com/mikethecodegeek/property-manage/">Github</a>
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+
+     
+
+       
+
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Call-To-Action Section
+   ================================================== -->
+   <section id="call-to-action">
+
+      <div class="row">
+
+
+         <div class="seven columns">
+
+            <h2><a class="smoothscroll" href="#contact">I am available for hire!</a></h2>
+
+         </div>
+
+         <div class="three columns action">
+
+            <a href="#contact" class="smoothscroll button">Contact Me</a>
+
+         </div>
+
+      </div>
+
+   </section> <!-- Call-To-Action Section End-->
+
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+                           to do what you believe is great work. And the only way to do great work is to love what you do.
+                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
+                           </p>
+                           <cite>Steve Jobs</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+
+            <div class="ten columns">
+
+                  <p class="lead">Please reach out to me if you are interested in working together. I would also like to hear questions, comments or concerns regarding this website or any of my projects.
+                  </p>
+
+            </div>
+
+         </div>
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form action="http://formspree.io/mikethecodegeek@gmail.com" method="post" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <input type="submit" class="submit"></input>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+
+               <!-- contact-warning -->
+               <div id="message-warning"> Error boy</div>
+               <!-- contact-success -->
+				   <div id="message-success">
+                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				   </div>
+
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+					   <h4>Contact</h4>
+					   <p class="address">
+						   Michael Sanford<br>
+						 
+						   <span>(508) 292-1799</span>
+					   </p>
+
+				   </div>
+
+         <!--      <div class="widget widget_tweets">
+
+                  <h4 class="widget-title">Latest Tweets</h4>
+
+                  <ul id="twitter">
+                     <li>
+                        <span>
+                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        </span>
+                        <b><a href="#">2 Days Ago</a></b>
+                     </li>
+                     <li>
+                        <span>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        </span>
+                        <b><a href="#">3 Days Ago</a></b>
+                     </li>
+                  </ul>
+
+		         </div> -->
+
+            </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="https://twitter.com/Mikethecodegeek"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/michael-sanford-1180b3115"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/mikethecodegeek"><i class="fa fa-github"></i></a></li>
+            </ul>
+
+        <!--    <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
+            </ul>
+-->
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
 </body>
+
 </html>
