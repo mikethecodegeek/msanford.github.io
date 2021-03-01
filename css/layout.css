@@ -1029,6 +1029,10 @@ footer .social-links li:first-child { margin-left: 0; }
    margin-bottom: 10px;
 }
 
+.white {
+   color: white;
+}
+
 @media screen and (min-width: 900px) {
    .flex-above-900 {
       display: flex;
