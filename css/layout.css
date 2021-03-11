@@ -430,6 +430,8 @@ ul#nav li.current a { color: #F06000; }
    background: #fff;
    overflow: hidden;
    position: relative;
+   display: flex;
+   justify-content: center;
 
    -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -441,10 +443,7 @@ ul#nav li.current a { color: #F06000; }
    display: block;
    cursor: pointer;
 }
-.thumb {
 
-
-}
 /* overlay */
 .portfolio-item .item-wrap .overlay {
    position: absolute;
@@ -490,6 +489,10 @@ ul#nav li.current a { color: #F06000; }
 }
 .portfolio-item .item-wrap img {
    vertical-align: bottom;
+}
+
+.item-wrap {
+   /* max-height: 210px; */
 }
 .portfolio-item .portfolio-item-meta { padding: 18px }
 .portfolio-item .portfolio-item-meta h5 {
