@@ -372,6 +372,23 @@
 
 }
 
+@media only screen and (min-width: 900px) {
+
+   /* header styles
+  ------------------------------------------------------------------ */
+ #portfolio-wrapper {
+    display: flex;
+    justify-content: center;
+ }
+
+}
+
+@media only screen and (max-width: 766px) {
+   .submit {
+      margin:auto !important;
+   }
+}
+
 
 
 
