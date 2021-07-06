@@ -58,7 +58,7 @@
       <div class="row banner">
          <div class="banner-text">
             <h1 class="responsive-headline">I'm Michael Sanford.</h1>
-            <h3>  <span>I am a Full Stack</span> <span>Software Engineer</span></h3>
+            <h3>   Software Engineer</h3>
             <hr />
             <ul class="social">
                <!-- <li><a href="https://twitter.com/Mikethecodegeek"><i class="fa fa-twitter"></i></a></li> -->
@@ -152,7 +152,10 @@
 				</div>end skill-bars -->
             <div class='skills'>
                <div class='skill-grid'>
-               <i class="devicon-react-original colored"></i>
+               <div class="skillme">
+                  <i class="skillme devicon-react-original colored"></i>
+                  <p>React</p>
+               </div>   
                <i class="devicon-redux-original colored"></i>
                <i class="devicon-html5-plain-wordmark colored"></i>
                <i class="devicon-css3-plain-wordmark colored"></i>
@@ -201,61 +204,67 @@
             <h1>Projects</h1>
 
             <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <div id="portfolio-wrapper projects-list" class="bgrid-quarters s-bgrid-thirds cf">
 
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
+               <div id="modal-01" class="project">
 
-                     <a href="#modal-01" title="">
-                        <img class='thumb' alt="" src="images/poedium_3.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Poedium</h5>
-                               <p>A poem sharing site inspired by Medium.com. Users are able to write poems as well as comment and like on other user's poems.</p> <br/>
-                              <p>ExpressJS, NodejS, Pug, PostgrSQL, Javascript</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+                  <img class="scale-with-grid p-image" src="images/poedium.png" alt="" />
+      
+                  <div class="description-box">
+                     <h4>Poedium</h4>
+                     <p>Is a full-stack application that seeks to clone the medium.com experience.
+                        As more people are trying to find a way to show their poetic side</p>
+                     <span class="categories"><i class="fa fa-tag"></i> ExpressJS, Pug, PostgreSQL, Javascript</span>
                   </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img class='thumb' alt="" src="images/untappd2.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>UnTapped</h5>
-                               <p>Full stack application that allows users to discover new beers and share their reviews with others.</p> <br/>
-                              <p>React, Redux, ExpressJS, NodeJS, PostgreSQL, Full Stack</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+      
+                  <div class="link-box">
+                     <a style='padding-right: 10px' target="_blank" href="https://poedium.herokuapp.com/">View Live</a>
+                     <a target="_blank" href="https://github.com/mikethecodegeek/medium-clone">Github</a>
+                     <!-- <a class="popup-modal-dismiss">Close</a> -->
                   </div>
-          		</div> <!-- item end -->
+      
+               </div><!-- modal-01 End -->
 
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
+               <div id="modal-02" class="project">
 
-                     <a href="#modal-03" title="">
-                        <img class='thumb' alt="" src="images/properteye3.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>PropertEye</h5>
-                              <p>This is a full stack property management tool written from the ground up. </p><br/>
-                                 <p>React, Redux, ExpressJS, NodeJS and PostgreSQL</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
+                  <img class="scale-with-grid p-image" src="images/untappd.png" alt="" />
+      
+                  <div class="description-box">
+                     <h4>UnTappd</h4>
+                     <p>This project is an application inspired by Untappd.com. This is a full stack application that includes auth, searching and uploading user reviews</p>
+                     <span class="categories"><i class="fa fa-tag"></i> React, Redux, ExpressJS, NodeJS, Full Stack</span>
                   </div>
-          		</div> <!-- item end -->
+      
+                  <div class="link-box">
+                     <a style='padding-right: 10px' target="_blank" href="https://intense-caverns-51880.herokuapp.com/">View Live</a>
+                     <a target="_blank" href="https://github.com/mikethecodegeek/untapped/">Github</a>
+                     <!-- <a class="popup-modal-dismiss">Close</a> -->
+                  </div>
+      
+               </div><!-- modal-02 End -->
+
+
+               <div id="modal-03" class="project">
+
+                  <img class="scale-with-grid p-image" src="images/PropertEye.png" alt="" />
+      
+                  <div class="description-box">
+                     <h4>PropertEye</h4>
+                     <p>Property management software for small businesses focused on residential renting. The primary purpose is to get an overview of what’s going on at any moment with their investment.</p>
+                     <span class="categories"><i class="fa fa-tag"></i> Database Design, React, Redux, ExpressJS, NodeJS</span>
+                  </div>
+      
+                  <div class="link-box">
+                     <a style='padding-right: 10px' target="_blank" href="https://lit-fortress-76276.herokuapp.com/profile/">View Live</a>
+                     <a target="_blank" href="https://github.com/mikethecodegeek/property-manage/">Github</a>
+                     <!-- <a class="popup-modal-dismiss">Close</a> -->
+                  </div>
+      
+               </div><!-- modal-03 End -->
+               
+              
+
+              
 
              
 
