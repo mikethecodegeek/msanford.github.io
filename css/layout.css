@@ -959,7 +959,9 @@ footer .social-links li:first-child { margin-left: 0; }
    color: white;
 }
 
-
+.sub {
+   font-family: Arial, Helvetica, sans-serif;
+}
 
 .p-image {
    max-height: 50%;
